@@ -107,3 +107,214 @@
 - **RandomNumberGenerator** — класс в C#, предоставляющий методы для генерации случайных чисел.
 
 - **Math.random()** — в JavaScript для получения псевдослучайных вещественных чисел.
+
+
+
+**#зАДАЧА:**
+
+1. Диапазон значений для вещественных типов данных может сильно различаться в зависимости от языка программирования и архитектуры. Например, в языке Си диапазон для типа float обычно составляет от -3.4E+38 до 3.4E+38, а для double — от -1.7E+308 до 1.7E+308.
+
+2. Программа для нахождения суммы, произведения и среднего арифметического трех целых чисел на Паскале:
+program Calculate;
+
+var
+  a, b, c: integer;
+  sum, product, average: real;
+begin
+  writeln('Введите три целых числа:');
+  readln(a, b, c);
+  
+  sum := a + b + c;
+  product := a * b * c;
+  average := sum / 3;
+
+  writeln(a, ' + ', b, ' + ', c, ' = ', sum:0:0);
+  writeln(a, ' * ', b, ' * ', c, ' = ', product:0:0);
+  writeln('Среднее арифметическое = ', average:0:6);
+end.
+
+
+3. Программа для вычисления площади круга и длины окружности:
+program CircleCalculator;
+const
+  Pi = 3.14159265359;
+var
+  radius: real;
+  area, circumference: real;
+begin
+  writeln('Введите радиус круга:');
+  readln(radius);
+  
+  area := Pi * radius * radius;
+  circumference := 2 * Pi * radius;
+
+  writeln('Площадь круга: ', area:0:2);
+  writeln('Длина окружности: ', circumference:0:2);
+end.
+
+
+4. Программа, которая меняет местами значения двух переменных:
+program SwapVariables;
+var
+  x, y, temp: integer;
+begin
+  writeln('Введите два целых числа:');
+  readln(x, y);
+  
+  temp := x;
+  x := y;
+  y := temp;
+
+  writeln('После обмена: x = ', x, ', y = ', y);
+end.
+
+
+5. Решение для обмена значениями без дополнительных переменных:
+program SwapWithoutTemp;
+var
+  x, y: integer;
+begin
+  writeln('Введите два целых числа:');
+  readln(x, y);
+  
+  x := x + y;
+  y := x - y;
+  x := x - y;
+
+  writeln('После обмена: x = ', x, ', y = ', y);
+end.
+
+
+6. Программа, чтобы возвести число в степень 10:
+program PowerOfTen;
+var
+  x, i, result: integer;
+begin
+  writeln('Введите число:');
+  readln(x);
+  
+  result := 1;
+  for i := 1 to 10 do
+    result := result * x;
+
+  writeln(x, ' в степени 10 = ', result);
+end.
+
+При вводе большого числа, например, 78, может возникнуть переполнение, так как результат превысит максимально допустимое значение для целого типа.
+
+7. Вычисления для вещественной переменной с a=2 и b=3:
+var
+  a, b, c: real;
+begin
+  a := 2;
+  b := 3;
+
+  c := a + 1/3; // а
+  writeln(c); 
+
+  c := a + 4/2*3 + 6; // б
+  writeln(c); 
+
+  c := (a + 4)/2*3; // в
+  writeln(c); 
+
+  c := (a + 4)/(b + 3) * a; // г
+  writeln(c); 
+end.
+
+
+8. Вычисление значения целочисленной переменной с a=26 и b=6:
+var
+  a, b, c: integer;
+begin
+  a := 26;
+  b := 6;
+
+  c := (a mod b) + b; // a)
+  writeln(c); 
+
+  c := (a div b) + a; // b)
+  writeln(c); 
+
+  // Другие выражения можно добавить аналогично
+end.
+
+
+9. Для вычислений с a=-22 и b=-4 результаты могут отличаться в зависимости от обработки отрицательных чисел в разных языках. В Паскале операции div и mod могут дать неожиданные результаты.
+
+10. Программа для разбивки трехзначного числа на цифры:
+program SplitNumber;
+var
+  num, hundreds, tens, units: integer;
+begin
+  writeln('Введите трехзначное число:');
+  readln(num);
+  
+  hundreds := num div 100;
+  tens := (num div 10) mod 10;
+  units := num mod 10;
+
+  writeln(hundreds, ',', tens, ',', units);
+end.
+
+
+11. Программа для вычисления расстояния между двумя точками на числовой оси:
+program DistanceBetweenPoints;
+var
+  point1, point2, distance: integer;
+begin
+  writeln('Введите координаты двух точек:');
+  readln(point1, point2);
+
+  if point1 > point2 then
+    distance := point1 - point2
+  else
+    distance := point2 - point1;
+
+  writeln('Расстояние между точками: ', distance);
+end.
+
+
+12. Программа для вычисления произведения двух вещественных чисел:
+program MultiplyRealNumbers;
+var
+  x, y, result: real;
+begin
+  writeln('Введите два вещественных числа:');
+  readln(x, y);
+  
+  result := x * y;
+  writeln('Произведение: ', result:0:2);
+end.
+
+
+13. Программа для округления вещественного числа:
+program RoundNumber;
+var
+  number: real;
+writeln('Введите вещественное число:');
+  readln(number);
+  
+  writeln('Округленное число: ', round(number));
+end.
+
+
+14. Программа для вывода 5 случайных целых чисел на отрезке a, b:
+program RandomNumbers;
+var
+  a, b, i, randomNum:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
